@@ -1,12 +1,10 @@
 import streamlit as st
-import webbrowser
 
 # Streamlit app
 st.title("Emergency Button")
 
 # Button to trigger emergency action
 if st.button("Call Emergency Services"):
-    # Replace with the actual action you want to perform
-    # Example: Open a URL to dial emergency services (e.g., tel:911 for mobile devices)
-    webbrowser.open("tel:425-394-8991")  # This works on mobile devices with a browser
-    st.success("Dialing emergency services...")
+    # Display a clickable link for the user to dial the number
+    st.markdown("[Click here to call emergency services](tel:425-394-8991)")
+    st.success("Click the link above to dial emergency services.")
